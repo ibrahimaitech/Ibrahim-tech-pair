@@ -25,7 +25,7 @@ FORK THE REPOSITORY (Repo)
 
 Now Deploy
     <br>
-<a href='https://dashboard.heroku.com/new?template=https://github.com/franceking1/Flash-Md-Session' target="_blank"><img alt='DEPLOY' src='https://img.shields.io/badge/-DEPLOY-black?style=for-the-badge&logo=heroku&logoColor=white'/>
+<a href='https://dashboard.heroku.com/new?template=https://github.com/ibrahimaitech/Ibrahim-tech-pair/tree/main' target="_blank"><img alt='DEPLOY' src='https://img.shields.io/badge/-DEPLOY-black?style=for-the-badge&logo=heroku&logoColor=white'/>
 # `Owner`
 
  <a href="https://github.com/franceking1"><img src="https://github.com/franceking1.png" width="250" height="250" alt="France King"/></a>
