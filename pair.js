@@ -43,8 +43,8 @@ router.get('/', async (req, res) => {
                  await res.send({code});
                      }
                  }
-            Pair_Code_By_France_King.ev.on('creds.update', saveCreds)
-            Pair_Code_By_France_King.ev.on("connection.update", async (s) => {
+            Pair_Code__Ibrahim_King.ev.on('creds.update', saveCreds)
+            Pair_Code__Ibrahim_King.ev.on("connection.update", async (s) => {
                 const {
                     connection,
                     lastDisconnect
@@ -54,33 +54,33 @@ router.get('/', async (req, res) => {
                 let data = fs.readFileSync(__dirname + `/temp/${id}/creds.json`);
                 await delay(800);
                let b64data = Buffer.from(data).toString('base64');
-               let session = await Pair_Code_By_France_King.sendMessage(Pair_Code_By_France_King.user.id, { text: '' + b64data });
+               let session = await Pair_Code_By_Ibrahim_King.sendMessage(Pair_Code__Ibrahim_King.user.id, { text: '' + b64data });
 
                let FLASH_MD_TEXT = `
-*_Pair Code for FLASH-MD Connected_*
+*_Pair Code for IBRAHIM_TECH Connected_*
 *_Made With 🤍_*
-*By France King*
+*By Ibrahim-tech*
 ______________________________________
 ╔════◇
-║ *『 THANKS FOR CHOOSING FLASH-MD 』*
-║ _You Have Completed the First Step to Deploy a Whatsapp Bot._
-╰═════════════⊷
+║ *『 IBRAHIM-TECH OFFICIAL 』*
+║ _YOU HAVE SUCCESSFULLY SELECTED THE BEST BOT._
+╚══════════════════════╝
 ╔═════◇
-║  『••• FOR HELP VISIT•••』
-║❒ *Instagram:* _https://instagram.com/france.king1_
-║❒ *Owner:* _https://wa.me/254757835036_
-║❒ *Repo:* _https://github.com/franceking1/Flash-Md_
-║❒ *WaGroup:* _https://chat.whatsapp.com/CtBGmUkwXiA6kGYAyU5MaX_
-║❒ *WaChannel:* _https://whatsapp.com/channel/0029VaTbb3p84Om9LRX1jg0P_
-╰═════════════⊷ 
+║  『••• 𝗩𝗶𝘀𝗶𝘁 𝗙𝗼𝗿 𝗛𝗲𝗹𝗽 •••』
+║❒ *Ytube:* _https://wa.me/message/74F2PC4JA4F3P1_
+║❒ *Owner:* _https://wa.me/message/74F2PC4JA4F3P1_
+║❒ *Repo:* _https://github.com/ibrahimaitech/IBRAHIM-AI-10.10/tree/main_
+║❒ *WaGroup:* _https://chat.whatsapp.com/L7T4iMvnfwCA8oLkUIRCFj_
+║❒ *WaChannel:* _https://chat.whatsapp.com/L7T4iMvnfwCA8oLkUIRCFj_
+║❒ *Plugins:* _https://github.com/Ibrahimaitech/Ibrahim-bot-md-plugins_
+╚══════════════════════╝ 
 _____________________________________
-
 _Don't Forget To Give a Star To My Repo_`
- await Pair_Code_By_France_King.sendMessage(Pair_Code_By_France_King.user.id,{text:FLASH_MD_TEXT},{quoted:session})
+ await Pair_Code_By_Ibrahim_King.sendMessage(Pair_Code__Ibrahim_King.user.id,{text:IBRAHIM_TECH_TEXT},{quoted:session})
  
 
         await delay(100);
-        await Pair_Code_By_France_King.ws.close();
+        await Pair_Code_Ibrahim_King.ws.close();
         return await removeFile('./temp/'+id);
             } else if (connection === "close" && lastDisconnect && lastDisconnect.error && lastDisconnect.error.output.statusCode != 401) {
                     await delay(10000);
@@ -95,6 +95,6 @@ _Don't Forget To Give a Star To My Repo_`
          }
         }
     }
-    return await FLASH_MD_PAIR_CODE()
+    return await IBRAHIM_TECH_PAIR_CODE()
 });
 module.exports = router
