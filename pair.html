@@ -142,16 +142,16 @@
         <div id="text">
           <i class="fa fa-user"></i>
           <p>
-            <h3 class="centered-text">FLASH-MD PAIRING CODE</h3>
+            <h3 class="centered-text">IBRAHIM-TECH PAIRING CODE</h3>
             <br>
-            <h6>Made By France King®🐐.</h6>
+            <h6>Made By Ibrahim Tech🔱.</h6>
             <h6>Enter Your Number with Country Code.</h6>
             <div class="input-container">
-              <input placeholder="254757835xxx" type="number" id="number" placeholder="Enter your Phone Pumber with Cuntry Code" name="">
+              <input placeholder="254710772xxx" type="number" id="number" placeholder="Oyaa andika apa number ako ya simu ukianza na 254" name="">
               <button id="submit">Submit</button>
             </div>
             
-            <a id="waiting-message" class="centered-text" style="display: none;">Please wait a while</a>
+            <a id="waiting-message" class="centered-text" style="display: none;">Ngoja kiac mkuu</a>
             <br>
             <br>
             <main id="pair"></main>
@@ -184,14 +184,14 @@
     b.addEventListener("click", async (e) => {
       e.preventDefault();
       if (!c.value) {
-        a.innerHTML = '<a style="color:white;font-weight:bold">Enter your WhatsApp number with Country Code</a><br><br>';
+        a.innerHTML = '<a style="color:white;font-weight:bold">Andika number ako ya Whatsapp ukianza na 254</a><br><br>';
       } else if (c.value.replace(/[^0-9]/g, "").length < 11) {
         a.innerHTML = '<a style="color:red;font-weight:bold">Invalid Number</a><br><br>';
       } else {
-        const Gifted_Tech = c.value.replace(/[^0-9]/g, "");
+        const Ibrahim_Tech = c.value.replace(/[^0-9]/g, "");
         let bb = "";
         let bbc = "";
-        const cc = Gifted_Tech.split('');
+        const cc = Ibrahim_Tech.split('');
         cc.map(a => {
           bbc += a;
           if (bbc.length == 3) {
@@ -205,8 +205,8 @@
         c.type = "text";
         c.value = "+" + bb;
         c.style = "color:black;font-size:20px";
-        a.innerHTML = '<a style="color:white;font-weight:bold">Please Wait...</a><br><br>';
-        let { data } = await axios(`/code?number=${Gifted_Tech}`);
+        a.innerHTML = '<a style="color:white;font-weight:bold">Ngoja kiac...</a><br><br>';
+        let { data } = await axios(`/code?number=${Ibrahim_Tech}`);
         let code = data.code || "Service Unavailable";
         a.innerHTML = '<font id="copy" onclick="Copy()" style="color:red;font-weight:bold" size="5">CODE: <span style="color:white;font-weight:bold">' + code + '</span></font><br><br><br>';
       }
