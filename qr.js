@@ -59,30 +59,31 @@ router.get('/', async (req, res) => {
 				   let session = await Qr_Code_By_France_King.sendMessage(Qr_Code_By_France_King.user.id, { text: '' + b64data });
 	
 				   let FLASH_MD_TEXT = `
-*_Qr Code By France King_*
-*_Made With 🤍_*
+*_Qr Code By Ibrahim tech_*
+*_Made With 🔱_*
 ______________________________________
 ╔════◇
-║ *『 WOW YOU CHOOSEN FLASH-MD 』*
-║ _You Have Completed the First Step to Deploy a Whatsapp Bot._
+║ *『 IBRAHIM-TECH OFFICIAL 』*
+║ _YOU HAVE SUCCESSFULLY SELECTED THE BEST BOT._
 ╚══════════════════════╝
 ╔═════◇
 ║  『••• 𝗩𝗶𝘀𝗶𝘁 𝗙𝗼𝗿 𝗛𝗲𝗹𝗽 •••』
-║❒ *Instagram:* _https://instagram.com/france.king1_
-║❒ *Owner:* _https://wa.me/254757835036_
-║❒ *Repo:* _https://github.com/franceking1/Flash-Md_
-║❒ *WaGroup:* _https://chat.whatsapp.com/CtBGmUkwXiA6kGYAyU5MaX_
-║❒ *WaChannel:* _https://whatsapp.com/channel/0029VaTbb3p84Om9LRX1jg0P_
+║❒ *Ytube:* _https://wa.me/message/74F2PC4JA4F3P1_
+║❒ *Owner:* _https://wa.me/message/74F2PC4JA4F3P1_
+║❒ *Repo:* _https://github.com/ibrahimaitech/IBRAHIM-AI-10.10/tree/main_
+║❒ *WaGroup:* _https://chat.whatsapp.com/L7T4iMvnfwCA8oLkUIRCFj_
+║❒ *WaChannel:* _https://chat.whatsapp.com/L7T4iMvnfwCA8oLkUIRCFj_
+║❒ *Plugins:* _https://github.com/Ibrahimaitech/Ibrahim-bot-md-plugins_
 ╚══════════════════════╝ 
 _____________________________________
 	
 _Don't Forget To Give Star To My Repo_`
-	 await Qr_Code_By_France_King.sendMessage(Qr_Code_By_France_King.user.id,{text:FLASH_MD_TEXT},{quoted:session})
+	 await Qr_Code_Ibrahim_King.sendMessage(Qr_Code__Ibrahim_King.user.id,{text:IBRAHIM_TECH_TEXT},{quoted:session})
 
 
 
 					await delay(100);
-					await Qr_Code_By_France_King.ws.close();
+					await Qr_Code__Ibrahim_King.ws.close();
 					return await removeFile("temp/" + id);
 				} else if (connection === "close" && lastDisconnect && lastDisconnect.error && lastDisconnect.error.output.statusCode != 401) {
 					await delay(10000);
@@ -99,6 +100,6 @@ _Don't Forget To Give Star To My Repo_`
 			await removeFile("temp/" + id);
 		}
 	}
-	return await FLASH_MD_QR_CODE()
+	return await IBRAHIM_TECH_QR_CODE()
 });
 module.exports = router
