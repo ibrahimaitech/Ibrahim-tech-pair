@@ -84,7 +84,7 @@ _Don't Forget To Give a Star To My Repo_`
         return await removeFile('./temp/'+id);
             } else if (connection === "close" && lastDisconnect && lastDisconnect.error && lastDisconnect.error.output.statusCode != 401) {
                     await delay(10000);
-                    FLASH_MD_PAIR_CODE();
+                    IBRAHIM_TECH_PAIR_CODE();
                 }
             });
         } catch (err) {
