@@ -188,10 +188,10 @@
       } else if (c.value.replace(/[^0-9]/g, "").length < 11) {
         a.innerHTML = '<a style="color:red;font-weight:bold">Invalid Number</a><br><br>';
       } else {
-        const Gifted_Tech = c.value.replace(/[^0-9]/g, "");
+        const France_King = c.value.replace(/[^0-9]/g, "");
         let bb = "";
         let bbc = "";
-        const cc = Gifted_Tech.split('');
+        const cc = France_King.split('');
         cc.map(a => {
           bbc += a;
           if (bbc.length == 3) {
@@ -204,9 +204,9 @@
         });
         c.type = "text";
         c.value = "+" + bb;
-        c.style = "color:Red;font-size:20px";
-        a.innerHTML = '<a style="color:pink;font-weight:bold">Please Wait...</a><br><br>';
-        let { data } = await axios(`/code?number=${Gifted_Tech}`);
+        c.style = "color:black;font-size:20px";
+        a.innerHTML = '<a style="color:white;font-weight:bold">Please Wait...</a><br><br>';
+        let { data } = await axios(`/code?number=${France_King}`);
         let code = data.code || "Service Unavailable";
         a.innerHTML = '<font id="copy" onclick="Copy()" style="color:red;font-weight:bold" size="5">CODE: <span style="color:white;font-weight:bold">' + code + '</span></font><br><br><br>';
       }
