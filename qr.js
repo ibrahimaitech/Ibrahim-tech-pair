@@ -34,7 +34,7 @@ router.get('/', async (req, res) => {
 			saveCreds
 		} = await useMultiFileAuthState('./temp/' + id)
 		try {
-			let Qr_Code_By_Ibrahim_King = France_King({
+			let Qr_Code_By_Ibrahim_Tech= Ibrahim_Tech({
 				auth: state,
 				printQRInTerminal: false,
 				logger: pino({
@@ -43,8 +43,8 @@ router.get('/', async (req, res) => {
 				browser: Browsers.macOS("Desktop"),
 			});
 
-			Qr_Code_By_Ibrahim_King.ev.on('creds.update', saveCreds)
-			Qr_Code_By_Ibrahim_Kingr.ev.on("connection.update", async (s) => {
+			Qr_Code_By_Ibrahim_Tech.ev.on('creds.update', saveCreds)
+			Qr_Code_By_Ibrahim_Techr.ev.on("connection.update", async (s) => {
 				const {
 					connection,
 					lastDisconnect,
