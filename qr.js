@@ -8,7 +8,7 @@ const fs = require('fs');
 let router = express.Router()
 const pino = require("pino");
 const {
-	default: France_King,
+	default: Ibrahim_Tech,
 	useMultiFileAuthState,
 	jidNormalizedUser,
 	Browsers,
@@ -28,13 +28,13 @@ const {
 } = require("node:fs/promises")
 router.get('/', async (req, res) => {
 	const id = makeid();
-	async function FLASH_MD_QR_CODE() {
+	async function IBRAHIM_TECH_QR_CODE() {
 		const {
 			state,
 			saveCreds
 		} = await useMultiFileAuthState('./temp/' + id)
 		try {
-			let Qr_Code_By_France_King = France_King({
+			let Qr_Code_By_Ibrahim_King = France_King({
 				auth: state,
 				printQRInTerminal: false,
 				logger: pino({
@@ -43,8 +43,8 @@ router.get('/', async (req, res) => {
 				browser: Browsers.macOS("Desktop"),
 			});
 
-			Qr_Code_By_France_King.ev.on('creds.update', saveCreds)
-			Qr_Code_By_France_Kingr.ev.on("connection.update", async (s) => {
+			Qr_Code_By_Ibrahim_King.ev.on('creds.update', saveCreds)
+			Qr_Code_By_Ibrahim_Kingr.ev.on("connection.update", async (s) => {
 				const {
 					connection,
 					lastDisconnect,
@@ -56,9 +56,9 @@ router.get('/', async (req, res) => {
 					let data = fs.readFileSync(__dirname + `/temp/${id}/creds.json`);
 					await delay(800);
 				   let b64data = Buffer.from(data).toString('base64');
-				   let session = await Qr_Code_By_France_King.sendMessage(Qr_Code_By_France_King.user.id, { text: '' + b64data });
+				   let session = await Qr_Code_By_Ibrahim_King.sendMessage(Qr_Code_By_Ibrahim_King.user.id, { text: '' + b64data });
 	
-				   let FLASH_MD_TEXT = `
+				   let IBRAHIM_TECH_TEXT = `
 *_Qr Code By Ibrahim tech_*
 *_Made With 🔱_*
 ______________________________________
