@@ -6,7 +6,7 @@
     "node" : ">=20.0.0"
     },
     "scripts": {
-    "start": "node Flash-Md.js"
+    "start": "node IBRAHIM-TECH.js"
   },
   "author": "France King",
   "license": "GPL-3.0 license",
