@@ -6,7 +6,7 @@ const fs = require('fs');
 let router = express.Router()
 const pino = require("pino");
 const {
-    default: France_King,
+    default: Ibrahim_King,
     useMultiFileAuthState,
     delay,
     makeCacheableSignalKeyStore,
@@ -20,13 +20,13 @@ function removeFile(FilePath){
 router.get('/', async (req, res) => {
     const id = makeid();
     let num = req.query.number;
-        async function FLASH_MD_PAIR_CODE() {
+        async function IBRAHIM_TECH_PAIR_CODE() {
         const {
             state,
             saveCreds
         } = await useMultiFileAuthState('./temp/'+id)
      try {
-            let Pair_Code_By_France_King = France_King({
+            let Pair_Code_By_Ibrahim_King = France_King({
                 auth: {
                     creds: state.creds,
                     keys: makeCacheableSignalKeyStore(state.keys, pino({level: "fatal"}).child({level: "fatal"})),
@@ -38,7 +38,7 @@ router.get('/', async (req, res) => {
              if(!Pair_Code_By_France_King.authState.creds.registered) {
                 await delay(1500);
                         num = num.replace(/[^0-9]/g,'');
-                            const code = await Pair_Code_By_France_King.requestPairingCode(num)
+                            const code = await Pair_Code_By_Ibrahim_King.requestPairingCode(num)
                  if(!res.headersSent){
                  await res.send({code});
                      }
@@ -56,7 +56,7 @@ router.get('/', async (req, res) => {
                let b64data = Buffer.from(data).toString('base64');
                let session = await Pair_Code_By_Ibrahim_King.sendMessage(Pair_Code__Ibrahim_King.user.id, { text: '' + b64data });
 
-               let FLASH_MD_TEXT = `
+               let IBRAHIM_TECH_TEXT = `
 *_Pair Code for IBRAHIM_TECH Connected_*
 *_Made With 🤍_*
 *By Ibrahim-tech*
